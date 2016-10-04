@@ -44,6 +44,6 @@ Step 3: Install the Google SDK using CocoaPods
 
 - Shows Users current location.
 - Refresh feature to refresh the main screen.
-- When user taps on the pin it shows details of ATM and Branch view.
+- When user taps on the pin it navogate to detail view of ATM and Branch.
 
 
