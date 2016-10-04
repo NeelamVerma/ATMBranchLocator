@@ -242,7 +242,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="ATM Locator" id="lnG-5J-e3J">
-                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="refresh" id="okb-hb-FTi">
+                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="okb-hb-FTi">
                             <connections>
                                 <action selector="refresh:" destination="BYZ-38-t0r" id="Lov-3F-gu1"/>
                             </connections>
