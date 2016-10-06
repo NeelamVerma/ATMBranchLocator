@@ -5,6 +5,7 @@
 //  Created by neelam_v on 05/10/16.
 //  Copyright © 2016 neelam_v. All rights reserved.
 //
+// Class for Utility class for getting Google Key
 
 import Foundation
 
@@ -36,7 +37,5 @@ class ATMUtility: NSObject {
             return ""
         }
     }
-    
-
 
 }

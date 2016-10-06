@@ -5,7 +5,7 @@
 //  Created by neelam_v on 03/10/16.
 //  Copyright © 2016 neelam_v. All rights reserved.
 //
-
+// Class for constants
 import Foundation
 
 struct JPMCConstants {
@@ -39,6 +39,8 @@ struct JPMCConstants {
         static let access = "access"
         static let lobbyHrs = "lobbyHrs"
         static let driveUpHrs = "driveUpHrs"
+        static let locations = "locations"
+
 
     }
 }

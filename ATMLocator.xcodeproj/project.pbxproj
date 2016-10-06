@@ -29,6 +29,7 @@
 		6F6E2E851DA42DAA009C847F /* App Config.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6F6E2E841DA42DAA009C847F /* App Config.plist */; };
 		6F6E2E871DA42E6A009C847F /* ATMUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F6E2E861DA42E6A009C847F /* ATMUtility.swift */; };
 		6F7C87D91DA6AE7B008D72CE /* ATMLocatorMapUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7C87D81DA6AE7B008D72CE /* ATMLocatorMapUITests.swift */; };
+		6F7C87DB1DA6EF4B008D72CE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6F7C87DA1DA6EF4B008D72CE /* Localizable.strings */; };
 		76FA20CE3504B84EEFBAE253 /* libPods-ATMLocatorTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1597343397E137C89CF02F26 /* libPods-ATMLocatorTests.a */; };
 /* End PBXBuildFile section */
 
@@ -74,6 +75,7 @@
 		6F6E2E841DA42DAA009C847F /* App Config.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "App Config.plist"; sourceTree = "<group>"; };
 		6F6E2E861DA42E6A009C847F /* ATMUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ATMUtility.swift; sourceTree = "<group>"; };
 		6F7C87D81DA6AE7B008D72CE /* ATMLocatorMapUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ATMLocatorMapUITests.swift; sourceTree = "<group>"; };
+		6F7C87DA1DA6EF4B008D72CE /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		8A1BEFFDE435A1FAE2FC4139 /* Pods-ATMLocatorUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ATMLocatorUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ATMLocatorUITests/Pods-ATMLocatorUITests.release.xcconfig"; sourceTree = "<group>"; };
 		C89D992E101A549B2828E330 /* Pods-ATMLocatorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ATMLocatorTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ATMLocatorTests/Pods-ATMLocatorTests.debug.xcconfig"; sourceTree = "<group>"; };
 		CA21C92C30E0BA597C3ED73D /* Pods-ATMLocator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ATMLocator.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ATMLocator/Pods-ATMLocator.debug.xcconfig"; sourceTree = "<group>"; };
@@ -157,13 +159,13 @@
 		6F4FE8171DA2962F0041BC6F /* ATMLocator */ = {
 			isa = PBXGroup;
 			children = (
-				6F6E2E831DA42D44009C847F /* AppConfig */,
 				6F4FE8181DA2962F0041BC6F /* AppDelegate.swift */,
 				6F4FE81A1DA2962F0041BC6F /* ViewController.swift */,
 				6F6E2E811DA3DA9A009C847F /* ATMLocationDetailVC.swift */,
 				6F4FE84E1DA2A4B90041BC6F /* JPMCWebServices */,
 				6F4FE8531DA2A4F70041BC6F /* Utility */,
 				6F4FE8581DA30A6F0041BC6F /* Models */,
+				6F6E2E831DA42D44009C847F /* AppConfig */,
 				6F4FE81C1DA2962F0041BC6F /* Main.storyboard */,
 				6F4FE81F1DA2962F0041BC6F /* Assets.xcassets */,
 				6F4FE8211DA2962F0041BC6F /* LaunchScreen.storyboard */,
@@ -204,6 +206,7 @@
 			children = (
 				6F4FE8541DA2A50C0041BC6F /* JPMCConstants.swift */,
 				6F6E2E861DA42E6A009C847F /* ATMUtility.swift */,
+				6F7C87DA1DA6EF4B008D72CE /* Localizable.strings */,
 			);
 			name = Utility;
 			sourceTree = "<group>";
@@ -336,6 +339,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F7C87DB1DA6EF4B008D72CE /* Localizable.strings in Resources */,
 				6F4FE8231DA2962F0041BC6F /* LaunchScreen.storyboard in Resources */,
 				6F6E2E851DA42DAA009C847F /* App Config.plist in Resources */,
 				6F4FE8201DA2962F0041BC6F /* Assets.xcassets in Resources */,

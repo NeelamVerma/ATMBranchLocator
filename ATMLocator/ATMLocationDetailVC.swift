@@ -6,6 +6,7 @@
 //  Copyright © 2016 neelam_v. All rights reserved.
 //
 
+// Class for ATM/Branch Details
 import UIKit
 
 class ATMLocationDetailVC: UIViewController
@@ -28,6 +29,7 @@ class ATMLocationDetailVC: UIViewController
         setUpView()
     }
     
+    // Set up view with details of ATM/Branch
     func setUpView() {
         
         if let name = locationDetailModel?.name

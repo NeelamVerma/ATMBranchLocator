@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  ATMLocator
+
+  Created by neelam_v on 07/10/16.
+  Copyright © 2016 neelam_v. All rights reserved.
+*/
+
+"Unknwon_Error" = "Something went wrong";
+//HomeViewController
+"Alert_text" = "Alert";
+"OK" = "Ok";

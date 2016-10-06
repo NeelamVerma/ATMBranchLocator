@@ -6,6 +6,7 @@
 //  Copyright © 2016 neelam_v. All rights reserved.
 //
 
+// Class for JPMC Webserivces
 import Foundation
 import GoogleMaps
 
@@ -64,7 +65,7 @@ class JPMCWebServices: NSObject {
                     if let responseData : NSDictionary = try NSJSONSerialization.JSONObjectWithData(cordinateData, options: NSJSONReadingOptions.MutableContainers) as? NSDictionary
                     {
                         var locations = Array<LocationDetail>()
-                        if let locs = responseData.valueForKey("locations") as? NSArray
+                        if let locs = responseData.valueForKey(JPMCConstants.locationDetail.locations) as? NSArray
                         {
                             for loc in locs
                             {

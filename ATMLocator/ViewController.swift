@@ -22,6 +22,8 @@ class ViewController: UIViewController, GMSMapViewDelegate ,CLLocationManagerDel
     override func viewDidLoad() {
         super.viewDidLoad()
         self.mapView.delegate = self
+        
+        // Location Manager attributes
         locationManager.delegate = self
         locationManager.requestWhenInUseAuthorization()
         locationManager.startUpdatingLocation()
@@ -33,14 +35,13 @@ class ViewController: UIViewController, GMSMapViewDelegate ,CLLocationManagerDel
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        
         let segueIdentifier = segue.identifier
         if segueIdentifier == "showATMLocationDetail"{
             let destinationController = segue.destinationViewController as! ATMLocationDetailVC
             destinationController.locationDetailModel = sender as? LocationDetail
             
         }
-        
-        
     }
     
     override func didReceiveMemoryWarning() {
@@ -48,7 +49,7 @@ class ViewController: UIViewController, GMSMapViewDelegate ,CLLocationManagerDel
         // Dispose of any resources that can be recreated.
     }
     
-    //MARK: Refresh
+    //MARK: Refresh The main screen to get updated near by locations
     @IBAction func refresh(sender: AnyObject) {
         mapView.clear()
         self.mapView.animateToZoom(15)
@@ -75,8 +76,10 @@ class ViewController: UIViewController, GMSMapViewDelegate ,CLLocationManagerDel
         
     }
     
+    // Call for near by ATMs/Branches
     func getNearByATMLocations(coordinates : CLLocationCoordinate2D) {
         
+        // Webservice call for getting near by ATMs or Branches
         JPMCWebServices.getLocations(coordinates) { (reponse, err) in
             dispatch_async(dispatch_get_main_queue()) {
                 
@@ -86,9 +89,11 @@ class ViewController: UIViewController, GMSMapViewDelegate ,CLLocationManagerDel
                     {
                         if let lattitude = locDetails.lat , logitude = locDetails.lng
                         {
+                            // To set markers
                             let marker = GMSMarker()
                             marker.map = self.mapView
                             marker.position = CLLocationCoordinate2DMake(Double(lattitude)!, Double(logitude)!)
+                            // Check for Branch or ATM
                             marker.icon = UIImage.init(named: "branchPin")
                             if locDetails.locType == "atm"
                             {
@@ -103,19 +108,18 @@ class ViewController: UIViewController, GMSMapViewDelegate ,CLLocationManagerDel
                 }
                 else
                 {
-                    var alert = UIAlertController()
                     if let error = err
                     {
-                        alert = UIAlertController(title: "Alert", message: error.localizedDescription, preferredStyle: UIAlertControllerStyle.Alert)
+                        self.showAlert(NSLocalizedString("Alert_text", comment: ""), messageStr: error.localizedDescription, preferredStyle: .Alert, target: self, onActionhandler: nil)
+                      
                         
                     }
                     else
                     {
-                        alert = UIAlertController(title: "Alert", message: "Something went wrong", preferredStyle: UIAlertControllerStyle.Alert)
+                        self.showAlert(NSLocalizedString("Alert_text", comment: ""), messageStr: NSLocalizedString("Unknwon_Error", comment: ""), preferredStyle: .Alert, target: self, onActionhandler: nil)
 
                     }
-                    alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.Cancel, handler: nil))
-                    self.presentViewController(alert, animated: true, completion: nil)
+                   
                 }
                 
             }
@@ -135,7 +139,15 @@ class ViewController: UIViewController, GMSMapViewDelegate ,CLLocationManagerDel
         return true
     }
 
-
+    // Common Alert
+    func showAlert(titileStr :String,messageStr:String,preferredStyle:UIAlertControllerStyle,target:UIViewController,onActionhandler:((UIAlertAction) ->Void)?)
+    {
+        
+        let loginfailedAlert = UIAlertController(title: titileStr, message: messageStr, preferredStyle:
+            preferredStyle)
+        loginfailedAlert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Cancel, handler: onActionhandler))
+        target.presentViewController(loginfailedAlert, animated: false, completion: nil)
+    }
 
 
 }

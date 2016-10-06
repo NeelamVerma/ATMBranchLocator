@@ -14,11 +14,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        // Setting Google Key to Google Services
         let googleKey = ATMUtility.sharedInstance.getAppConfigValueFor(key: JPMCConstants.MapConstants.ApiKey)
         GMSServices.provideAPIKey(googleKey as! String)
+        
         return true
     }
 

@@ -24,7 +24,8 @@ class ATMLocatorTests: XCTestCase {
         super.tearDown()
     }
     
-    func test_1_Storyboard() {
+    // Test for Storyborads and UI
+    func test_1_StoryboardUITest() {
         let storyboard = UIStoryboard(name: "Main",
                                       bundle: NSBundle.mainBundle())
         let navigationController = storyboard.instantiateInitialViewController() as! UINavigationController
@@ -35,7 +36,8 @@ class ATMLocatorTests: XCTestCase {
         XCTAssertNotNil(vc.view,"Cannot find root view instance")
     }
     
-    func test_2_Example() {
+    // Test for naar by location API Test
+    func test_2_GetLocation() {
         
         let storyboard = UIStoryboard(name: "Main",
                                       bundle: NSBundle.mainBundle())
