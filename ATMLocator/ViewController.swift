@@ -59,44 +59,65 @@ class ViewController: UIViewController, GMSMapViewDelegate ,CLLocationManagerDel
     //MARK: Location Manager Delegate
     func locationManager(manager: CLLocationManager,
                          didUpdateLocations locations: [CLLocation]){
-        // 1
+
         let location:CLLocation = locations.last!
         self.latitude = location.coordinate.latitude
         self.longitude = location.coordinate.longitude
         
-        // 2
         let coordinates = CLLocationCoordinate2DMake(self.latitude, self.longitude)
         let marker = GMSMarker(position: coordinates)
         marker.icon = UIImage.init(named: "currentLoc")
         marker.map = self.mapView
+        
         self.mapView.animateToLocation(coordinates)
         self.locationManager.stopUpdatingLocation()
-
+        self.getNearByATMLocations(coordinates)
+        
+    }
+    
+    func getNearByATMLocations(coordinates : CLLocationCoordinate2D) {
+        
         JPMCWebServices.getLocations(coordinates) { (reponse, err) in
             dispatch_async(dispatch_get_main_queue()) {
                 
-                for locDetails in reponse!
+                if let response = reponse
                 {
-                    if let lattitude = locDetails.lat , logitude = locDetails.lng
+                    for locDetails in response
                     {
-                        let marker = GMSMarker()
-                        marker.map = self.mapView
-                        marker.position = CLLocationCoordinate2DMake(Double(lattitude)!, Double(logitude)!)
-                        marker.icon = UIImage.init(named: "branchPin")
-                        if locDetails.locType == "atm"
+                        if let lattitude = locDetails.lat , logitude = locDetails.lng
                         {
-                            marker.icon = UIImage.init(named: "atmPin")
+                            let marker = GMSMarker()
+                            marker.map = self.mapView
+                            marker.position = CLLocationCoordinate2DMake(Double(lattitude)!, Double(logitude)!)
+                            marker.icon = UIImage.init(named: "branchPin")
+                            if locDetails.locType == "atm"
+                            {
+                                marker.icon = UIImage.init(named: "atmPin")
+                            }
+                            
+                            marker.userData = locDetails
+                            
                         }
                         
-                        marker.userData = locDetails
-                        
                     }
-
                 }
+                else
+                {
+                    var alert = UIAlertController()
+                    if let error = err
+                    {
+                        alert = UIAlertController(title: "Alert", message: error.localizedDescription, preferredStyle: UIAlertControllerStyle.Alert)
+                    }
+                    else
+                    {
+                        alert = UIAlertController(title: "Alert", message: "Something went wrong", preferredStyle: UIAlertControllerStyle.Alert)
 
+                    }
+                    self.presentViewController(alert, animated: true, completion: nil)
+                }
                 
             }
-
+            
         }
     }
     

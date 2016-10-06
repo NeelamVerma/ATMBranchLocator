@@ -9,7 +9,10 @@
 import XCTest
 
 class ATMLocatorUITests: XCTestCase {
-        
+    
+    let app = XCUIApplication()
+    let _SRL:Double = 40.0
+
     override func setUp() {
         super.setUp()
         
@@ -28,9 +31,36 @@ class ATMLocatorUITests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func waitForElementToAppear(element: XCUIElement,
+                                file: String = #file, line: UInt = #line) {
+        let existsPredicate = NSPredicate(format: "exists == true")
+        expectationForPredicate(existsPredicate,
+                                evaluatedWithObject: element, handler: nil)
+        
+        
+        waitForExpectationsWithTimeout(_SRL) { (error) -> Void in
+            if (error != nil) {
+                let message = "Failed to find \(element) after 10 seconds."
+                self.recordFailureWithDescription(message,
+                                                  inFile: file, atLine: line, expected: true)
+            }
+        }
     }
+    
+    func waitForElementToDisappear(element: XCUIElement,
+                                   file: String = #file, line: UInt = #line) {
+        let existsPredicate = NSPredicate(format: "exists == false")
+        expectationForPredicate(existsPredicate,
+                                evaluatedWithObject: element, handler: nil)
+        
+        waitForExpectationsWithTimeout(_SRL) { (error) -> Void in
+            if (error != nil) {
+                let message = "Failed to find \(element) after 10 seconds."
+                self.recordFailureWithDescription(message,
+                                                  inFile: file, atLine: line, expected: true)
+            }
+        }
+    }
+
     
 }

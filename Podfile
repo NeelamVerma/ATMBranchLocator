@@ -6,6 +6,14 @@ target 'ATMLocator' do
   # use_frameworks!
 
 pod ‘GoogleMaps’
+end
+target 'ATMLocatorTests' do
+    pod ‘GoogleMaps’
+end
+
+target 'ATMLocatorUITests' do
+    pod ‘GoogleMaps’
+
 
 end
 

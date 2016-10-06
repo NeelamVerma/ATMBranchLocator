@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		378BC4A8EF968442044135AC /* libPods-ATMLocatorUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F53AAB7DEA642C7D5BA0C6EF /* libPods-ATMLocatorUITests.a */; };
 		60A603FB7F7CD1E6506236A3 /* libPods-ATMLocator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A117D1E567D3CBF6DFC5901 /* libPods-ATMLocator.a */; };
 		6F4FE8191DA2962F0041BC6F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F4FE8181DA2962F0041BC6F /* AppDelegate.swift */; };
 		6F4FE81B1DA2962F0041BC6F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F4FE81A1DA2962F0041BC6F /* ViewController.swift */; };
@@ -27,6 +28,8 @@
 		6F6E2E821DA3DA9A009C847F /* ATMLocationDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F6E2E811DA3DA9A009C847F /* ATMLocationDetailVC.swift */; };
 		6F6E2E851DA42DAA009C847F /* App Config.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6F6E2E841DA42DAA009C847F /* App Config.plist */; };
 		6F6E2E871DA42E6A009C847F /* ATMUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F6E2E861DA42E6A009C847F /* ATMUtility.swift */; };
+		6F7C87D91DA6AE7B008D72CE /* ATMLocatorMapUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7C87D81DA6AE7B008D72CE /* ATMLocatorMapUITests.swift */; };
+		76FA20CE3504B84EEFBAE253 /* libPods-ATMLocatorTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1597343397E137C89CF02F26 /* libPods-ATMLocatorTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +51,9 @@
 
 /* Begin PBXFileReference section */
 		095D3A521DE3B0AEE990F320 /* Pods-ATMLocator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ATMLocator.release.xcconfig"; path = "Pods/Target Support Files/Pods-ATMLocator/Pods-ATMLocator.release.xcconfig"; sourceTree = "<group>"; };
+		1597343397E137C89CF02F26 /* libPods-ATMLocatorTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ATMLocatorTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A117D1E567D3CBF6DFC5901 /* libPods-ATMLocator.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ATMLocator.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3060D6901ED083954B02415C /* Pods-ATMLocatorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ATMLocatorTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ATMLocatorTests/Pods-ATMLocatorTests.release.xcconfig"; sourceTree = "<group>"; };
 		6F4FE8151DA2962F0041BC6F /* ATMLocator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ATMLocator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F4FE8181DA2962F0041BC6F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6F4FE81A1DA2962F0041BC6F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -68,7 +73,12 @@
 		6F6E2E811DA3DA9A009C847F /* ATMLocationDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ATMLocationDetailVC.swift; sourceTree = "<group>"; };
 		6F6E2E841DA42DAA009C847F /* App Config.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "App Config.plist"; sourceTree = "<group>"; };
 		6F6E2E861DA42E6A009C847F /* ATMUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ATMUtility.swift; sourceTree = "<group>"; };
+		6F7C87D81DA6AE7B008D72CE /* ATMLocatorMapUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ATMLocatorMapUITests.swift; sourceTree = "<group>"; };
+		8A1BEFFDE435A1FAE2FC4139 /* Pods-ATMLocatorUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ATMLocatorUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ATMLocatorUITests/Pods-ATMLocatorUITests.release.xcconfig"; sourceTree = "<group>"; };
+		C89D992E101A549B2828E330 /* Pods-ATMLocatorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ATMLocatorTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ATMLocatorTests/Pods-ATMLocatorTests.debug.xcconfig"; sourceTree = "<group>"; };
 		CA21C92C30E0BA597C3ED73D /* Pods-ATMLocator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ATMLocator.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ATMLocator/Pods-ATMLocator.debug.xcconfig"; sourceTree = "<group>"; };
+		F25C2C7AD49E1A79EA8D790D /* Pods-ATMLocatorUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ATMLocatorUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ATMLocatorUITests/Pods-ATMLocatorUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F53AAB7DEA642C7D5BA0C6EF /* libPods-ATMLocatorUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ATMLocatorUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76FA20CE3504B84EEFBAE253 /* libPods-ATMLocatorTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				378BC4A8EF968442044135AC /* libPods-ATMLocatorUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,6 +113,8 @@
 			isa = PBXGroup;
 			children = (
 				2A117D1E567D3CBF6DFC5901 /* libPods-ATMLocator.a */,
+				1597343397E137C89CF02F26 /* libPods-ATMLocatorTests.a */,
+				F53AAB7DEA642C7D5BA0C6EF /* libPods-ATMLocatorUITests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -110,6 +124,10 @@
 			children = (
 				CA21C92C30E0BA597C3ED73D /* Pods-ATMLocator.debug.xcconfig */,
 				095D3A521DE3B0AEE990F320 /* Pods-ATMLocator.release.xcconfig */,
+				C89D992E101A549B2828E330 /* Pods-ATMLocatorTests.debug.xcconfig */,
+				3060D6901ED083954B02415C /* Pods-ATMLocatorTests.release.xcconfig */,
+				F25C2C7AD49E1A79EA8D790D /* Pods-ATMLocatorUITests.debug.xcconfig */,
+				8A1BEFFDE435A1FAE2FC4139 /* Pods-ATMLocatorUITests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -168,6 +186,7 @@
 			children = (
 				6F4FE8381DA2962F0041BC6F /* ATMLocatorUITests.swift */,
 				6F4FE83A1DA2962F0041BC6F /* Info.plist */,
+				6F7C87D81DA6AE7B008D72CE /* ATMLocatorMapUITests.swift */,
 			);
 			path = ATMLocatorUITests;
 			sourceTree = "<group>";
@@ -232,9 +251,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6F4FE8401DA2962F0041BC6F /* Build configuration list for PBXNativeTarget "ATMLocatorTests" */;
 			buildPhases = (
+				F9FAD27E91C650B6D6994FE2 /* [CP] Check Pods Manifest.lock */,
 				6F4FE8251DA2962F0041BC6F /* Sources */,
 				6F4FE8261DA2962F0041BC6F /* Frameworks */,
 				6F4FE8271DA2962F0041BC6F /* Resources */,
+				80D572559B06AB424A3D46FB /* [CP] Embed Pods Frameworks */,
+				699B0B39EFE327E9C8A40173 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -250,9 +272,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6F4FE8431DA2962F0041BC6F /* Build configuration list for PBXNativeTarget "ATMLocatorUITests" */;
 			buildPhases = (
+				579B1A323C67430BCE95052F /* [CP] Check Pods Manifest.lock */,
 				6F4FE8301DA2962F0041BC6F /* Sources */,
 				6F4FE8311DA2962F0041BC6F /* Frameworks */,
 				6F4FE8321DA2962F0041BC6F /* Resources */,
+				0A7A6A00A1D939A3A8CA28F0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -336,7 +360,37 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0A7A6A00A1D939A3A8CA28F0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ATMLocatorUITests/Pods-ATMLocatorUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		516AFB7806112A0DA93E602E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		579B1A323C67430BCE95052F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -366,6 +420,36 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ATMLocator/Pods-ATMLocator-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		699B0B39EFE327E9C8A40173 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ATMLocatorTests/Pods-ATMLocatorTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		80D572559B06AB424A3D46FB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ATMLocatorTests/Pods-ATMLocatorTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		8D82ED237382FFCD85217B8D /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -379,6 +463,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ATMLocator/Pods-ATMLocator-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F9FAD27E91C650B6D6994FE2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -413,6 +512,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F7C87D91DA6AE7B008D72CE /* ATMLocatorMapUITests.swift in Sources */,
 				6F4FE8521DA2A4D40041BC6F /* JPMCWebServices.swift in Sources */,
 				6F4FE85C1DA30A8B0041BC6F /* LocationDetailModel.swift in Sources */,
 				6F4FE8571DA2A50C0041BC6F /* JPMCConstants.swift in Sources */,
@@ -478,6 +578,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -524,6 +625,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -566,8 +668,10 @@
 		};
 		6F4FE8411DA2962F0041BC6F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C89D992E101A549B2828E330 /* Pods-ATMLocatorTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = ATMLocatorTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.neelam.ATMLocatorTests;
@@ -578,8 +682,10 @@
 		};
 		6F4FE8421DA2962F0041BC6F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3060D6901ED083954B02415C /* Pods-ATMLocatorTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = ATMLocatorTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.neelam.ATMLocatorTests;
@@ -590,7 +696,9 @@
 		};
 		6F4FE8441DA2962F0041BC6F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F25C2C7AD49E1A79EA8D790D /* Pods-ATMLocatorUITests.debug.xcconfig */;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = ATMLocatorUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.neelam.ATMLocatorUITests;
@@ -601,7 +709,9 @@
 		};
 		6F4FE8451DA2962F0041BC6F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A1BEFFDE435A1FAE2FC4139 /* Pods-ATMLocatorUITests.release.xcconfig */;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = ATMLocatorUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.neelam.ATMLocatorUITests;

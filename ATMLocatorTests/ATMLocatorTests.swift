@@ -7,12 +7,15 @@
 //
 
 import XCTest
+import GoogleMaps
+
 @testable import ATMLocator
 
 class ATMLocatorTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
+     
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
     
@@ -21,10 +24,33 @@ class ATMLocatorTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func test_1_Storyboard() {
+        let storyboard = UIStoryboard(name: "Main",
+                                      bundle: NSBundle.mainBundle())
+        let navigationController = storyboard.instantiateInitialViewController() as! UINavigationController
+        navigationController.viewDidLoad()
+        let vc = navigationController.topViewController as! ViewController
+        vc.locationManager.delegate = vc
+        XCTAssertNotNil(navigationController.view,"Cannot find navigation controller instance")
+        XCTAssertNotNil(vc.view,"Cannot find root view instance")
     }
+    
+    func test_2_Example() {
+        
+        let storyboard = UIStoryboard(name: "Main",
+                                      bundle: NSBundle.mainBundle())
+        let navigationController = storyboard.instantiateInitialViewController() as! UINavigationController
+        navigationController.viewDidLoad()
+        let vc = navigationController.topViewController as! ViewController
+        vc.locationManager.delegate = vc
+        let coordinates = CLLocationCoordinate2DMake(43.0, 34.0)
+        vc.getNearByATMLocations(coordinates)
+        
+        XCTAssertNotNil(vc.getNearByATMLocations(coordinates),"No Response")
+
+    }
+    
+
     
     func testPerformanceExample() {
         // This is an example of a performance test case.

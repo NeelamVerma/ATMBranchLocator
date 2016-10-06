@@ -10,6 +10,7 @@ import Foundation
 
 class ATMUtility: NSObject {
 
+    
     //MARK: Values from App Configuration
     class func getAppConfigValueFor(key key: String) -> AnyObject! {
         // Get Main Bundle

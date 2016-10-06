@@ -9,10 +9,30 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-ATMLocatorTests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-ATMLocatorUITests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>08C4076E8B119FA108C3898CD0D90D9F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>5F6D284AFAF494F22B9A6EE9C70C05A6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>85D22D9559EB8AC85D988E29803D673D</key>
 		<dict>
 			<key>primary</key>
 			<true/>

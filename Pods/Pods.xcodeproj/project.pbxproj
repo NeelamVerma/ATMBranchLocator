@@ -7,25 +7,45 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		647EFFC356FA2050D63590E70A3CFC21 /* Pods-ATMLocator-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 30DAF39B114012A20F0E193089CA4F60 /* Pods-ATMLocator-dummy.m */; };
+		26EDB58722BC6BF9BC9C05CC8D7B5027 /* Pods-ATMLocatorTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A2399C8225E482084EB7D7C11F9F701F /* Pods-ATMLocatorTests-dummy.m */; };
+		5B4AE293562DA06930EA6BE0069F7617 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		647EFFC356FA2050D63590E70A3CFC21 /* Pods-ATMLocator-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C4255E2AE7A4BF07E02CA0B78E3CC242 /* Pods-ATMLocator-dummy.m */; };
+		74832EF858825F1FAC5692432B7F90B9 /* Pods-ATMLocatorUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 82B6BE8907BA1763725E04EC75CE6B21 /* Pods-ATMLocatorUITests-dummy.m */; };
+		D9D02A0A08C2266BDA18DEE75916BC97 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
 		FEEFEA9353CB9EDE259F85610BD52BA7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0717A53FA3146A1C539652799CFFFCB1 /* GoogleMaps.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = Subspecs/Maps/Frameworks/GoogleMaps.framework/Versions/A/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
-		086590C9A703EB0FEBBB2776EFB34AA0 /* Pods-ATMLocator-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ATMLocator-frameworks.sh"; sourceTree = "<group>"; };
-		30DAF39B114012A20F0E193089CA4F60 /* Pods-ATMLocator-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ATMLocator-dummy.m"; sourceTree = "<group>"; };
-		526B50C7CB16FF3DE6F1DFEE7DEDBDD5 /* libPods-ATMLocator.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ATMLocator.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		62CF78DAB740200B7EAB1654A312FBB8 /* Pods-ATMLocator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ATMLocator.debug.xcconfig"; sourceTree = "<group>"; };
+		102C6BC2819DC708DA5A3F86854D91D9 /* Pods-ATMLocator-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ATMLocator-acknowledgements.plist"; sourceTree = "<group>"; };
+		108A4486FC3038AFDE2878E0B5BF9A1D /* Pods-ATMLocatorTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ATMLocatorTests-frameworks.sh"; sourceTree = "<group>"; };
+		1581B4A0CBE48FCA0525D1DC08F10607 /* Pods-ATMLocatorTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ATMLocatorTests-resources.sh"; sourceTree = "<group>"; };
+		44B0097109A0951DDCB067C285D24FBE /* Pods-ATMLocatorTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ATMLocatorTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		5F839E9A67CDB43E513E8565A6E24111 /* Pods-ATMLocator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ATMLocator.debug.xcconfig"; sourceTree = "<group>"; };
+		5FA0CBED066C92AEE116F06456EE8892 /* Pods-ATMLocatorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ATMLocatorTests.release.xcconfig"; sourceTree = "<group>"; };
+		6CA1F29FE54FD6970FB9C8EA955CAFEF /* libPods-ATMLocatorTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ATMLocatorTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		79199D36BFB60986C54BE20ED09B854A /* Pods-ATMLocatorUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ATMLocatorUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		79C2EE7F6B5C7D7240EC459BE256379E /* Pods-ATMLocatorUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ATMLocatorUITests.release.xcconfig"; sourceTree = "<group>"; };
 		7A96742FFAC6754BBC1ABD7D4638EAF1 /* GoogleMapsBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsBase.framework; path = Subspecs/Base/Frameworks/GoogleMapsBase.framework; sourceTree = "<group>"; };
-		808A70B6DDDC608CE10D02E29AE615A1 /* Pods-ATMLocator-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ATMLocator-acknowledgements.markdown"; sourceTree = "<group>"; };
+		7B4CC9C979DB026CA239A456EFC40F67 /* Pods-ATMLocatorUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ATMLocatorUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		82B6BE8907BA1763725E04EC75CE6B21 /* Pods-ATMLocatorUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ATMLocatorUITests-dummy.m"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9BC0EEC24B7854CA83D1BB6A57028B31 /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMaps.framework; path = Subspecs/Maps/Frameworks/GoogleMaps.framework; sourceTree = "<group>"; };
-		A0A34F5663DD80C31FE6AD5548CB514B /* Pods-ATMLocator-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ATMLocator-acknowledgements.plist"; sourceTree = "<group>"; };
+		A2399C8225E482084EB7D7C11F9F701F /* Pods-ATMLocatorTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ATMLocatorTests-dummy.m"; sourceTree = "<group>"; };
+		A3009D5ED417F2650DB8B7BC55E23619 /* Pods-ATMLocatorUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ATMLocatorUITests-frameworks.sh"; sourceTree = "<group>"; };
+		A753DC18B724352A8ECBCDBE1905E97C /* Pods-ATMLocator-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ATMLocator-acknowledgements.markdown"; sourceTree = "<group>"; };
+		B1653EAAF47BC933EDC59BD3B3943CB7 /* Pods-ATMLocator-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ATMLocator-resources.sh"; sourceTree = "<group>"; };
 		BEC993795583B87B1EC31F69AA6F331A /* GoogleMapsCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsCore.framework; path = Subspecs/Maps/Frameworks/GoogleMapsCore.framework; sourceTree = "<group>"; };
+		C01381269092BEDE871D627B39B4128D /* Pods-ATMLocatorTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ATMLocatorTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C0F580B3DF7D25CC5F400D71881C56F9 /* Pods-ATMLocatorUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ATMLocatorUITests-resources.sh"; sourceTree = "<group>"; };
+		C4255E2AE7A4BF07E02CA0B78E3CC242 /* Pods-ATMLocator-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ATMLocator-dummy.m"; sourceTree = "<group>"; };
 		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		E23C2B524F7753D8399046DCDEFC0B69 /* Pods-ATMLocator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ATMLocator.release.xcconfig"; sourceTree = "<group>"; };
-		FD1010827052207628FDE6B9AF940A25 /* Pods-ATMLocator-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ATMLocator-resources.sh"; sourceTree = "<group>"; };
+		D5FA63D50953D59B93A1707CFA8284BC /* Pods-ATMLocatorUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ATMLocatorUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E211081A0FEA71BD32DA4977B6F52B1C /* Pods-ATMLocatorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ATMLocatorTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E441C38291EB34CFE7F35F55840606FB /* libPods-ATMLocator.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ATMLocator.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F116D8905780272224B55CFC123179B5 /* libPods-ATMLocatorUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ATMLocatorUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F43AF15204DEE4DB9840F9B83994F53B /* Pods-ATMLocator-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ATMLocator-frameworks.sh"; sourceTree = "<group>"; };
+		FDC5D2C7B709752F3B23BD112BB0B2AD /* Pods-ATMLocator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ATMLocator.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,6 +54,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				FEEFEA9353CB9EDE259F85610BD52BA7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		529353B6D98ADC3EE6C3049FABB30368 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B4AE293562DA06930EA6BE0069F7617 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B35618AA15F438247DDAA58EC1D6D850 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9D02A0A08C2266BDA18DEE75916BC97 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,21 +82,6 @@
 				7A96742FFAC6754BBC1ABD7D4638EAF1 /* GoogleMapsBase.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		107BE1D2C7492F41C521ED1880B310D7 /* Pods-ATMLocator */ = {
-			isa = PBXGroup;
-			children = (
-				808A70B6DDDC608CE10D02E29AE615A1 /* Pods-ATMLocator-acknowledgements.markdown */,
-				A0A34F5663DD80C31FE6AD5548CB514B /* Pods-ATMLocator-acknowledgements.plist */,
-				30DAF39B114012A20F0E193089CA4F60 /* Pods-ATMLocator-dummy.m */,
-				086590C9A703EB0FEBBB2776EFB34AA0 /* Pods-ATMLocator-frameworks.sh */,
-				FD1010827052207628FDE6B9AF940A25 /* Pods-ATMLocator-resources.sh */,
-				62CF78DAB740200B7EAB1654A312FBB8 /* Pods-ATMLocator.debug.xcconfig */,
-				E23C2B524F7753D8399046DCDEFC0B69 /* Pods-ATMLocator.release.xcconfig */,
-			);
-			name = "Pods-ATMLocator";
-			path = "Target Support Files/Pods-ATMLocator";
 			sourceTree = "<group>";
 		};
 		1418B056D31B27EE2CEBA552B5ADFE56 /* Base */ = {
@@ -80,12 +101,19 @@
 			path = GoogleMaps;
 			sourceTree = "<group>";
 		};
-		296DDBA7F2797597D0069A65655613D2 /* Targets Support Files */ = {
+		35CD8A63F576129952EBC57651DB9A69 /* Pods-ATMLocatorUITests */ = {
 			isa = PBXGroup;
 			children = (
-				107BE1D2C7492F41C521ED1880B310D7 /* Pods-ATMLocator */,
+				79199D36BFB60986C54BE20ED09B854A /* Pods-ATMLocatorUITests-acknowledgements.markdown */,
+				7B4CC9C979DB026CA239A456EFC40F67 /* Pods-ATMLocatorUITests-acknowledgements.plist */,
+				82B6BE8907BA1763725E04EC75CE6B21 /* Pods-ATMLocatorUITests-dummy.m */,
+				A3009D5ED417F2650DB8B7BC55E23619 /* Pods-ATMLocatorUITests-frameworks.sh */,
+				C0F580B3DF7D25CC5F400D71881C56F9 /* Pods-ATMLocatorUITests-resources.sh */,
+				D5FA63D50953D59B93A1707CFA8284BC /* Pods-ATMLocatorUITests.debug.xcconfig */,
+				79C2EE7F6B5C7D7240EC459BE256379E /* Pods-ATMLocatorUITests.release.xcconfig */,
 			);
-			name = "Targets Support Files";
+			name = "Pods-ATMLocatorUITests";
+			path = "Target Support Files/Pods-ATMLocatorUITests";
 			sourceTree = "<group>";
 		};
 		3AEC177709F5E2CA8647760385A95C03 /* Resources */ = {
@@ -104,12 +132,19 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		52474741CE8D63DCCEFCAD8028AFA7DB /* Products */ = {
+		43AA52FB860DF81AF897D3D298FEC356 /* Pods-ATMLocator */ = {
 			isa = PBXGroup;
 			children = (
-				526B50C7CB16FF3DE6F1DFEE7DEDBDD5 /* libPods-ATMLocator.a */,
+				A753DC18B724352A8ECBCDBE1905E97C /* Pods-ATMLocator-acknowledgements.markdown */,
+				102C6BC2819DC708DA5A3F86854D91D9 /* Pods-ATMLocator-acknowledgements.plist */,
+				C4255E2AE7A4BF07E02CA0B78E3CC242 /* Pods-ATMLocator-dummy.m */,
+				F43AF15204DEE4DB9840F9B83994F53B /* Pods-ATMLocator-frameworks.sh */,
+				B1653EAAF47BC933EDC59BD3B3943CB7 /* Pods-ATMLocator-resources.sh */,
+				5F839E9A67CDB43E513E8565A6E24111 /* Pods-ATMLocator.debug.xcconfig */,
+				FDC5D2C7B709752F3B23BD112BB0B2AD /* Pods-ATMLocator.release.xcconfig */,
 			);
-			name = Products;
+			name = "Pods-ATMLocator";
+			path = "Target Support Files/Pods-ATMLocator";
 			sourceTree = "<group>";
 		};
 		6B9DDBFD34805D0CECB3FE7AA6B7B594 /* Pods */ = {
@@ -129,14 +164,39 @@
 			name = Maps;
 			sourceTree = "<group>";
 		};
+		6C386E576642F07A6FBD201DB66BF3CD /* Pods-ATMLocatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				C01381269092BEDE871D627B39B4128D /* Pods-ATMLocatorTests-acknowledgements.markdown */,
+				44B0097109A0951DDCB067C285D24FBE /* Pods-ATMLocatorTests-acknowledgements.plist */,
+				A2399C8225E482084EB7D7C11F9F701F /* Pods-ATMLocatorTests-dummy.m */,
+				108A4486FC3038AFDE2878E0B5BF9A1D /* Pods-ATMLocatorTests-frameworks.sh */,
+				1581B4A0CBE48FCA0525D1DC08F10607 /* Pods-ATMLocatorTests-resources.sh */,
+				E211081A0FEA71BD32DA4977B6F52B1C /* Pods-ATMLocatorTests.debug.xcconfig */,
+				5FA0CBED066C92AEE116F06456EE8892 /* Pods-ATMLocatorTests.release.xcconfig */,
+			);
+			name = "Pods-ATMLocatorTests";
+			path = "Target Support Files/Pods-ATMLocatorTests";
+			sourceTree = "<group>";
+		};
+		724403626010384DEEFD3E517FC46828 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E441C38291EB34CFE7F35F55840606FB /* libPods-ATMLocator.a */,
+				6CA1F29FE54FD6970FB9C8EA955CAFEF /* libPods-ATMLocatorTests.a */,
+				F116D8905780272224B55CFC123179B5 /* libPods-ATMLocatorUITests.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
 				6B9DDBFD34805D0CECB3FE7AA6B7B594 /* Pods */,
-				52474741CE8D63DCCEFCAD8028AFA7DB /* Products */,
-				296DDBA7F2797597D0069A65655613D2 /* Targets Support Files */,
+				724403626010384DEEFD3E517FC46828 /* Products */,
+				EF38F68512ACBE9D3D57D7CC0923B717 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
@@ -157,9 +217,35 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		EF38F68512ACBE9D3D57D7CC0923B717 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				43AA52FB860DF81AF897D3D298FEC356 /* Pods-ATMLocator */,
+				6C386E576642F07A6FBD201DB66BF3CD /* Pods-ATMLocatorTests */,
+				35CD8A63F576129952EBC57651DB9A69 /* Pods-ATMLocatorUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		08C4076E8B119FA108C3898CD0D90D9F /* Pods-ATMLocatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6071B5FBB4149F3CE6C371195082C4A6 /* Build configuration list for PBXNativeTarget "Pods-ATMLocatorTests" */;
+			buildPhases = (
+				FAA9EB9508BAAEA58F6B4403918E475D /* Sources */,
+				529353B6D98ADC3EE6C3049FABB30368 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-ATMLocatorTests";
+			productName = "Pods-ATMLocatorTests";
+			productReference = 6CA1F29FE54FD6970FB9C8EA955CAFEF /* libPods-ATMLocatorTests.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 		5F6D284AFAF494F22B9A6EE9C70C05A6 /* Pods-ATMLocator */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 717BAABF28B1D1744CE18187A6362DF0 /* Build configuration list for PBXNativeTarget "Pods-ATMLocator" */;
@@ -173,7 +259,23 @@
 			);
 			name = "Pods-ATMLocator";
 			productName = "Pods-ATMLocator";
-			productReference = 526B50C7CB16FF3DE6F1DFEE7DEDBDD5 /* libPods-ATMLocator.a */;
+			productReference = E441C38291EB34CFE7F35F55840606FB /* libPods-ATMLocator.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		85D22D9559EB8AC85D988E29803D673D /* Pods-ATMLocatorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 274942569532B0E9F9FD8DF60BD95C6E /* Build configuration list for PBXNativeTarget "Pods-ATMLocatorUITests" */;
+			buildPhases = (
+				38525FB232A77AF3D71B26DA42E28417 /* Sources */,
+				B35618AA15F438247DDAA58EC1D6D850 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-ATMLocatorUITests";
+			productName = "Pods-ATMLocatorUITests";
+			productReference = F116D8905780272224B55CFC123179B5 /* libPods-ATMLocatorUITests.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -193,21 +295,39 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 52474741CE8D63DCCEFCAD8028AFA7DB /* Products */;
+			productRefGroup = 724403626010384DEEFD3E517FC46828 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				5F6D284AFAF494F22B9A6EE9C70C05A6 /* Pods-ATMLocator */,
+				08C4076E8B119FA108C3898CD0D90D9F /* Pods-ATMLocatorTests */,
+				85D22D9559EB8AC85D988E29803D673D /* Pods-ATMLocatorUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		38525FB232A77AF3D71B26DA42E28417 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74832EF858825F1FAC5692432B7F90B9 /* Pods-ATMLocatorUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F04231F6B8EF42D93BB13451118D1567 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				647EFFC356FA2050D63590E70A3CFC21 /* Pods-ATMLocator-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAA9EB9508BAAEA58F6B4403918E475D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26EDB58722BC6BF9BC9C05CC8D7B5027 /* Pods-ATMLocatorTests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,6 +376,69 @@
 			};
 			name = Debug;
 		};
+		85EBD3369740D91663371FE2179FDF34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5FA0CBED066C92AEE116F06456EE8892 /* Pods-ATMLocatorTests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		967371C2CAFC7A12B188D90DCBA753DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79C2EE7F6B5C7D7240EC459BE256379E /* Pods-ATMLocatorUITests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		9737342446E644EA1E4DFE87878DFA24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5FA63D50953D59B93A1707CFA8284BC /* Pods-ATMLocatorUITests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
 		C7E474A03CAE21F1CB6046E7344C59BD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -296,7 +479,7 @@
 		};
 		CFFBFA3B2F60867B47184EA4DEF5CD7E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E23C2B524F7753D8399046DCDEFC0B69 /* Pods-ATMLocator.release.xcconfig */;
+			baseConfigurationReference = FDC5D2C7B709752F3B23BD112BB0B2AD /* Pods-ATMLocator.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -317,7 +500,28 @@
 		};
 		E03098C874A56B9288901624351DF07D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 62CF78DAB740200B7EAB1654A312FBB8 /* Pods-ATMLocator.debug.xcconfig */;
+			baseConfigurationReference = 5F839E9A67CDB43E513E8565A6E24111 /* Pods-ATMLocator.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		F9E13DE51530A0D1C7B1303D62274C8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E211081A0FEA71BD32DA4977B6F52B1C /* Pods-ATMLocatorTests.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -339,11 +543,29 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		274942569532B0E9F9FD8DF60BD95C6E /* Build configuration list for PBXNativeTarget "Pods-ATMLocatorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9737342446E644EA1E4DFE87878DFA24 /* Debug */,
+				967371C2CAFC7A12B188D90DCBA753DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				034014829C1E4434983CF3A690C12017 /* Debug */,
 				C7E474A03CAE21F1CB6046E7344C59BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6071B5FBB4149F3CE6C371195082C4A6 /* Build configuration list for PBXNativeTarget "Pods-ATMLocatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9E13DE51530A0D1C7B1303D62274C8F /* Debug */,
+				85EBD3369740D91663371FE2179FDF34 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
