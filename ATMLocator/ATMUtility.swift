@@ -10,17 +10,33 @@ import Foundation
 
 class ATMUtility: NSObject {
 
+    var pathStr : String?
+
+    class var sharedInstance :ATMUtility {
+        struct Singleton {
+            static var instance = ATMUtility()
+        }
+        
+        return Singleton.instance
+    }
+    
+    private override init() {
+        self.pathStr = NSBundle.mainBundle().pathForResource("App Config", ofType: "plist")
+    }
     
     //MARK: Values from App Configuration
-    class func getAppConfigValueFor(key key: String) -> AnyObject! {
-        // Get Main Bundle
-        let frameworkBundle = NSBundle.mainBundle()
-        // Get App Config Plist from Bundle
-        if let pathStr = frameworkBundle.pathForResource("App Config", ofType: "plist") {
-            let headerDictionary = NSDictionary(contentsOfFile: pathStr)
+     func getAppConfigValueFor(key key: String) -> AnyObject! {
+        if let path = pathStr
+        {
+            let headerDictionary = NSDictionary(contentsOfFile: path)
             return headerDictionary!.valueForKey(key)
         }
-        return nil
+        else
+        {
+            return ""
+        }
     }
+    
+
 
 }

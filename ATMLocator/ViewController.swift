@@ -107,12 +107,14 @@ class ViewController: UIViewController, GMSMapViewDelegate ,CLLocationManagerDel
                     if let error = err
                     {
                         alert = UIAlertController(title: "Alert", message: error.localizedDescription, preferredStyle: UIAlertControllerStyle.Alert)
+                        
                     }
                     else
                     {
                         alert = UIAlertController(title: "Alert", message: "Something went wrong", preferredStyle: UIAlertControllerStyle.Alert)
 
                     }
+                    alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.Cancel, handler: nil))
                     self.presentViewController(alert, animated: true, completion: nil)
                 }
                 
